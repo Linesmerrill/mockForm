@@ -20,6 +20,7 @@ func (c App) Verify() revel.Result {
 	// for k,v := range MAPP{
 	// 	fmt.Println("Key:", k,"Value:", v)
 	// }
+	
 	// fmt.Println("THIS IS THE REQUEST", c.Request)
 	fmt.Println("THIS IS THE PARAMS", c.Params)
 	return c.Render()
