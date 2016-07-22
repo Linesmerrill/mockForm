@@ -29,7 +29,7 @@ var _ = Describe("MockForm", func() {
 	})
 	It("Should have a heading", func(){
 		Expect(page.Navigate("http://localhost:9000")).To(Succeed())
-		Eventually(page.Find(".header")).Should(HaveText("API Deployment Instructions"))
+		Eventually(page.Find(".header")).Should(HaveText("A2A Deployment Instructions"))
 	})
 	It("Should have a submit button and route to a new page", func(){
 		Expect(page.Navigate("http://localhost:9000")).To(Succeed())
