@@ -7,7 +7,8 @@
       <h1 class="header">A2A Deployment Instructions</h1>
     </div>
     <div>
-      <form action="{{url "App.Verify"}}" name="form" method="POST" class="submitForm"><br>
+
+      <form action="{{url "App.verify"}}" name="form" method="POST"><br>
         Service Name: <input type="text" name="serviceName" class="serviceName"><br>
         Backend service endpoint implementation type: <input type="text" name="backendServices" class="backendService"><br>
         Backend service endpoint public certificate (.p7b) attached to the CO? <input type="text" name="publicCertificate" class="publicCert"><br>
