@@ -5,16 +5,17 @@ import (
 	"fmt"
 	// "net/http"
 	// "html"
-	// "encoding/json"
+	"encoding/json"
 )
 
 type App struct {
 	*revel.Controller
 }
 
-type Surface struct {
-    Data string `json:"data"` //since we have to export the field
-                              //but want the lowercase letter
+type Form struct {
+	ServiceName string `json:"serviceName"`
+	BackendServeImp string `json:"backendServeImp"`
+	BackendServePubCert string `json:"backendServePubCert"`
 }
 
 func (c App) Index() revel.Result {
@@ -23,6 +24,9 @@ func (c App) Index() revel.Result {
 
 
 func (c App) Verify() revel.Result {
+	data, _ := json.Marshal(c.Params.Form)
+	fmt.Println(string(data))
+
 	// fmt.Println(form)
 	// ParseParams(c.Params, c.Request)
 	// url.Parse(c.Params)
