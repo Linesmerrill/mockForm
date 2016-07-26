@@ -44,4 +44,5 @@ func (c App) VerifyUserInput(form string) bool{
 			return true
 		}
 		return false
+
 }
