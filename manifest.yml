@@ -1,3 +1,4 @@
 ---
 applications:
   - name: mockForm
+    command: revel run mockForm
