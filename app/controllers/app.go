@@ -3,9 +3,6 @@ package controllers
 import (
 	"github.com/revel/revel"
 	"fmt"
-	// "reflect"
-	// "net/http"
-	// "html"
 	"encoding/json"
 )
 
