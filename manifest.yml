@@ -1,5 +1,5 @@
 ---
 applications:
   - name: mockForm
-    command: revel run mockForm
+    command: go-online
     host: myForm
