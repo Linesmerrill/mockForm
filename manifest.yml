@@ -1,0 +1,5 @@
+---
+applications:
+  - name: mockForm
+    command: revel/bin
+    host: mockForm-test  
