@@ -1,7 +1,7 @@
 ---
 applications:
   - name: mockForm
-    command: my-go-server
+    command: revel run ../mockForm
     host: mockForm-test
     env:
       GOVERSION: go1.5
