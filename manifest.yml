@@ -2,4 +2,8 @@
 applications:
   - name: mockForm
     command: revel/bin
-    host: mockForm-test  
+    host: mockForm-test
+    env:
+      GOVERSION: go1.5
+      GOPACKAGENAME: cfpush-test-with-super-cool-other-stuff
+      GO15VENDOREXPERIMENT: 1
