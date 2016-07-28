@@ -2,6 +2,6 @@
 applications:
   - name: mockForm
     command: go-online
+    buildpack: go-buildpack_1_7_3
     host: myForm
     path: .
-    
