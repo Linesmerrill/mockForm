@@ -3,3 +3,5 @@ applications:
   - name: mockForm
     command: go-online
     host: myForm
+    path: .
+    
