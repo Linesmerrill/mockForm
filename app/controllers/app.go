@@ -4,7 +4,12 @@ import (
 	"github.com/revel/revel"
 	"fmt"
 	"encoding/json"
+	// "database/sql"
 )
+//
+// type DB struct{
+// 	*app.DB
+// }
 
 type App struct {
 	*revel.Controller
@@ -18,6 +23,7 @@ type Form struct {
 
 func (c App) Index() revel.Result {
 
+	// database := c.everythingFromDB()
 	return c.Render()
 }
 
@@ -41,5 +47,8 @@ func (c App) VerifyUserInput(form string) bool{
 			return true
 		}
 		return false
-
 }
+
+// func (c App) everythingFromDB() string{
+// 	return DB.Query("select * from users");
+// }
