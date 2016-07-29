@@ -17,7 +17,7 @@ type Form struct {
 }
 
 func (c App) Index() revel.Result {
-
+	fmt.Println("Hello sir")
 	return c.Render()
 }
 
