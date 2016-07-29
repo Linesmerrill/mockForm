@@ -363,7 +363,6 @@ func addModule(name, importPath, modulePath string) {
 			TemplatePaths = append(TemplatePaths, viewsPath)
 		}
 	}
-	INFO.Print("printing on line 366")
 	INFO.Print("Loaded module ", filepath.Base(modulePath))
 
 	// Hack: There is presently no way for the testrunner module to add the
