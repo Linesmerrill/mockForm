@@ -1,7 +1,7 @@
 ---
 applications:
   - name: mockForm
-    command: go-online
-    buildpack: go_buildpack_1_7_3
+    # command: revel run mockForm
+    buildpack: null_buildpack
     host: myForm
     path: .

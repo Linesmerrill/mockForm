@@ -30,6 +30,7 @@ func InitDB() {
 }
 
 func init() {
+	fmt.Println("HERE IN init")
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{
 		revel.PanicFilter,             // Recover from panics and display an error page instead.

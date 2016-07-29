@@ -22,7 +22,6 @@ type Form struct {
 }
 
 func (c App) Index() revel.Result {
-
 	// database := c.everythingFromDB()
 	return c.Render()
 }
