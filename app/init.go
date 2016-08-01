@@ -25,8 +25,8 @@ func InitDB() {
 
 		// DB.Query("CREATE TABLE users (id serial, name text, email text)")
 		// DB.Query("INSERT INTO users (name, email) VALUES ('Bob', 'Bob@fake.net')")
-		row, err := DB.Query("SELECT * FROM users")
-		revel.INFO.Println(row);
+		// row, err := DB.Query("SELECT * FROM users")
+		// revel.INFO.Println(row);
 }
 
 func init() {
