@@ -7,9 +7,9 @@ import (
 	// "database/sql"
 )
 //
-// type DB struct{
-// 	*app.DB
-// }
+type DB struct{
+	*app.DB
+}
 
 type App struct {
 	*revel.Controller
@@ -35,6 +35,9 @@ func (c App) Verify() revel.Result {
 			return c.Redirect("/")
 		}
 	}
+	sql := "SELECT name from table "
+    rows, err := app.DB.Query(sql)
+		fmt.Println(rows)
 	data, _ := json.Marshal(c.Params.Form)
 	fmt.Println(string(data))
 	return c.Render(params)
