@@ -51,7 +51,7 @@ func (c App) VerifyUserInput(form string) bool{
 		return false
 }
 
-func (c App) everythingFromDB() {
+func (c App) everythingFromDB(){
 	rows, err := app.DB.Query("select * from users");
 	if err != nil {
 		fmt.Println("Beluga Whales: ", err);
